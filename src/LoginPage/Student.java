@@ -42,7 +42,7 @@ public class Student
 	    String fname = fnamelb.getText();
 	    System.out.println("The firstname label value is:==>"+fname);
 	    
-	    // For Firstname input textbox
+	    // For Firstname input textbox.....
 	    WebElement firstname = driver.findElement(By.cssSelector("div.container>label[for='username']+input")); 
 	    // By tagname,classvalue and tagname,attribute,valueand sibling locator used here
 	    firstname.sendKeys("shree");
