@@ -120,7 +120,7 @@ public class Student
 	    String url4 = driver.getCurrentUrl();
 	    System.out.println("After navigating back thr current url of webpage is:==>"+url4);
 	    
-	    // driver.close();
+	     driver.close();
 
      }
 }
