@@ -39,6 +39,7 @@ public class Student
 	   
 	    // For firstname label
 	    WebElement fnamelb = driver.findElement(By.cssSelector("div.container>label[for='username']"));   // By tagname,classvalue and tagname,attribute,value
+	    //WebElement fnamelb = driver.findElement(By.cssSelector("div.container >label :nth-of-type(1)")); // nth-of-type(1)
 	    String fname = fnamelb.getText();
 	    System.out.println("The firstname label value is:==>"+fname);
 	    
@@ -55,7 +56,7 @@ public class Student
 	    System.out.println("-----------------------------------------------------------------------------------------------------------------------");
 	    
 	    // For password label
-	    WebElement passwdlb = driver.findElement(By.cssSelector("label[for='password']"));  // tagname,attribute,value
+	    WebElement passwdlb = driver.findElement(By.cssSelector("div.container :nth-child(5)")); // nth-child
 	    String passwd = passwdlb.getText();
 	    System.out.println("The password label is:==>"+passwd);
 	    
